@@ -3,37 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DOM Manipulation</title>
+    <title>Student Registration Form</title>
     <link rel="stylesheet" href="style.css">
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 </head>
 <body>
     <div class="container">
-        <h1 id="heading">DOM Manipulation</h1>
-        <p class="description">My Dynamic Web Page where i am going to perform DOM Manipulation</p>
-        
-        <button id="changeText">Change Text</button>
-        <button id="changeStyle">Change Style</button>
-        
-        <div>
-            <img id="image" src="/Arsenal_FC.svg.png" alt="Placeholder Image">
-            <button id="changeImage">Change Image</button>
-        </div>
-        
-        <div id="textNodeContainer">
-            <button id="addTextNode">This is my new text which i am adding</button>
-            <button id="deleteNode">Deleting Node</button>
-        </div>
-        
-        <form id="exampleForm">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" placeholder="Enter your name">
-            <button type="button" id="accessData">Access Form Data</button>
+        <h2>Student Registration Form</h2>
+        <form id="registrationForm">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email" required>
+            
+            <label for="phone">Phone Number:</label>
+            <input type="text" id="phone" name="phone" required>
+            
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            
+            <label for="confirmPassword">Confirm Password:</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" required>
+            
+            <button type="submit">Register</button>
         </form>
-        
-        <button id="jqueryButton">Change Button Text (jQuery)</button>
+        <p id="errorMessages"></p>
     </div>
     <script src="script.js"></script>
-    <script src="jquery.js"></script>
 </body>
 </html>
