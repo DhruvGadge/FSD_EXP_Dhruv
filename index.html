@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1 id="heading">DOM Manipulation</h1>
+        <p class="description">My Dynamic Web Page where i am going to perform DOM Manipulation</p>
+        
+        <button id="changeText">Change Text</button>
+        <button id="changeStyle">Change Style</button>
+        
+        <div>
+            <img id="image" src="/Arsenal_FC.svg.png" alt="Placeholder Image">
+            <button id="changeImage">Change Image</button>
+        </div>
+        
+        <div id="textNodeContainer">
+            <button id="addTextNode">This is my new text which i am adding</button>
+            <button id="deleteNode">Deleting Node</button>
+        </div>
+        
+        <form id="exampleForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name">
+            <button type="button" id="accessData">Access Form Data</button>
+        </form>
+        
+        <button id="jqueryButton">Change Button Text (jQuery)</button>
+    </div>
+    <script src="script.js"></script>
+    <script src="jquery.js"></script>
+</body>
+</html>
